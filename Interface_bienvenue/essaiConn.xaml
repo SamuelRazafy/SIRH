@@ -8,12 +8,12 @@
         Title="essaiConn" Height="645" Width="1100" WindowStyle="None">
     <Grid>
         <StackPanel HorizontalAlignment="Left" Height="617" Margin="10,10,0,0" VerticalAlignment="Top" Width="636" Background="#FF003F9A">
-            <StackPanel Height="135" Margin="183,30,225,0">
+            <StackPanel Height="135" Margin="183,80,225,0">
                 <StackPanel.Background>
                     <ImageBrush ImageSource="Logo de GO.png"/>
                 </StackPanel.Background>
             </StackPanel>
-            <Label Content="MILAY IALAHY ISANY" Foreground="White" FontWeight="Bold" FontSize="36" BorderThickness="120,50,20,0"/>
+            <Label Content="SYSTEME D'INFORMATION&#xD;&#xA;DES RESSOURCES HUMAINES" Foreground="White" FontWeight="Bold" FontSize="36" BorderThickness="120,50,20,0" Height="219" Margin="-40,40,0,0"/>
         </StackPanel>
         <TextBox x:Name="textMail"  HorizontalAlignment="Left" Height="43" Margin="715,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="317" TextChanged="textMail_TextChanged"  Style="{StaticResource MaterialDesignFloatingHintTextBox}"
 materialDesign:HintAssist.Hint="Saisir e-mail"
@@ -29,7 +29,6 @@ BorderThickness="0 0 0 1.5"/>
         <RadioButton x:Name="choix" Content="Se souvienir de moi" HorizontalAlignment="Left" Margin="715,217,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.508,1.833" Checked="choix_Checked"/>
         <Button x:Name="butAnnuler" Content="Annuler" HorizontalAlignment="Left" Margin="944,533,0,0" VerticalAlignment="Top" Width="88" Height="27" Click="butAnnuler_Click" Background="White" BorderBrush="White" materialDesign:ButtonAssist.CornerRadius="22" Foreground="Black" Opacity="0.6"/>
         <Button x:Name="mikatona" Content="X" HorizontalAlignment="Left" Margin="1002,0,0,0" VerticalAlignment="Top" Width="59" FontSize="20" FontWeight="Bold" Foreground="Black" Background="White" BorderBrush="White" Height="36" Opacity="0.7" Click="mikatona_Click"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="-57,157,0,0" VerticalAlignment="Top"/>
         <PasswordBox x:Name="textMdp" HorizontalAlignment="Left" Margin="715,157,0,0" VerticalAlignment="Top" Width="317" Background="{x:Null}" materialDesign:HintAssist.Hint="Saisir mot de passe"/>
         <StackPanel HorizontalAlignment="Left" Height="24" Margin="672,158,0,0" VerticalAlignment="Top" Width="30">
             <StackPanel.Background>
