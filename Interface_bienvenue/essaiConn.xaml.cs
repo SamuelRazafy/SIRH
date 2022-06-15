@@ -85,6 +85,7 @@ namespace Interface_bienvenue
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+
             email = textMail.Text;
             password = textMdp.Password.ToString();
             if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password))

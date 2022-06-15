@@ -7,15 +7,15 @@
         mc:Ignorable="d"
         Title="GestionPersonnelle" Height="645" Width="1591">
     <Grid>
-        <Button x:Name="butAjouter" Content="Ajouter" HorizontalAlignment="Left" Margin="1187,79,0,0" VerticalAlignment="Top" Width="334" Background="#FF003F9A" materialDesign:ButtonAssist.CornerRadius="22" Click="butAjouter_Click"/>
-        <Button x:Name="butSupprimer" Content="Supprimer" HorizontalAlignment="Left" Margin="1187,126,0,0" VerticalAlignment="Top" Width="334" Background="#FF003F9A" materialDesign:ButtonAssist.CornerRadius="22"/>
-        <Button x:Name="butModifier" Content="Modifier" HorizontalAlignment="Left" Margin="1187,173,0,0" VerticalAlignment="Top" Width="334" Background="#FF003F9A" materialDesign:ButtonAssist.CornerRadius="22"/>
-        <Button x:Name="butRechercher" Content="Rechercher" HorizontalAlignment="Left" Margin="1187,219,0,0" VerticalAlignment="Top" Width="334" Background="#FF003F9A" Click="Button_Click" materialDesign:ButtonAssist.CornerRadius="22"/>
-        <Button x:Name="butAnnuler" Content="Annuler" HorizontalAlignment="Left" Margin="1187,269,0,0" VerticalAlignment="Top" Width="334" Background="#FF003F9A" materialDesign:ButtonAssist.CornerRadius="22"/>
-        <Label Content="GESTION DE PERSONNEL" HorizontalAlignment="Left" Margin="404,30,0,0" VerticalAlignment="Top" Width="266" FontWeight="Bold" FontSize="22"/>
-        <Grid HorizontalAlignment="Left" Height="359" Margin="10,73,0,0" VerticalAlignment="Top" Width="948">
-            <TextBox x:Name="textMail" HorizontalAlignment="Left" Height="23" Margin="245,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="580"/>
-            <TextBox x:Name="textPrenom" HorizontalAlignment="Left" Height="23" Margin="243,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="580" RenderTransformOrigin="0.303,-1.171">
+        <Button x:Name="butAjouter" Content="Ajouter" HorizontalAlignment="Left" Margin="1250,79,0,0" VerticalAlignment="Top" Width="271" Background="#FF003F9A" materialDesign:ButtonAssist.CornerRadius="22" Click="butAjouter_Click"/>
+        <Button x:Name="butSupprimer" Content="Supprimer" HorizontalAlignment="Left" Margin="1250,126,0,0" VerticalAlignment="Top" Width="271" Background="#FF003F9A" materialDesign:ButtonAssist.CornerRadius="22" Click="butSupprimer_Click"/>
+        <Button x:Name="butModifier" Content="Modifier" HorizontalAlignment="Left" Margin="1250,173,0,0" VerticalAlignment="Top" Width="271" Background="#FF003F9A" materialDesign:ButtonAssist.CornerRadius="22"/>
+        <Button x:Name="butRechercher" Content="Rechercher" HorizontalAlignment="Left" Margin="1250,219,0,0" VerticalAlignment="Top" Width="271" Background="#FF003F9A" Click="Button_Click" materialDesign:ButtonAssist.CornerRadius="22"/>
+        <Button x:Name="butAnnuler" Content="Annuler" HorizontalAlignment="Left" Margin="1250,269,0,0" VerticalAlignment="Top" Width="271" Background="#FF003F9A" materialDesign:ButtonAssist.CornerRadius="22"/>
+        <Label Content="GESTION DE PERSONNEL" HorizontalAlignment="Left" Margin="704,10,0,0" VerticalAlignment="Top" Width="266" FontWeight="Bold" FontSize="22"/>
+        <Grid HorizontalAlignment="Left" Height="359" Margin="10,73,0,0" VerticalAlignment="Top" Width="1131">
+            <TextBox x:Name="textMobile" HorizontalAlignment="Left" Height="23" Margin="245,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="363"/>
+            <TextBox x:Name="textSexe" HorizontalAlignment="Left" Height="23" Margin="243,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="362" RenderTransformOrigin="0.303,-1.171">
                 <TextBox.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -25,29 +25,35 @@
                     </TransformGroup>
                 </TextBox.RenderTransform>
             </TextBox>
-            <TextBox x:Name="textNom" HorizontalAlignment="Left" Height="23" Margin="245,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="580"/>
+            <TextBox x:Name="textStatutMatrimonial" HorizontalAlignment="Left" Height="23" Margin="245,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="363"/>
             <Label Content="Adresse :" HorizontalAlignment="Left" Margin="15,73,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.88,0.708"/>
-            <Label Content="Nom :" HorizontalAlignment="Left" Margin="15,10,0,0" VerticalAlignment="Top"/>
-            <Label Content="Prénom :" HorizontalAlignment="Left" Margin="16,44,0,0" VerticalAlignment="Top"/>
-            <Label Content="E-mail :" HorizontalAlignment="Left" Margin="15,97,0,0" VerticalAlignment="Top"/>
+            <Label Content="Statut matrimonial :" HorizontalAlignment="Left" Margin="15,10,0,0" VerticalAlignment="Top"/>
+            <Label Content="Sexe :" HorizontalAlignment="Left" Margin="16,44,0,0" VerticalAlignment="Top"/>
+            <Label Content="Mobile :" HorizontalAlignment="Left" Margin="15,97,0,0" VerticalAlignment="Top"/>
             <Label Content="Téléphone :" HorizontalAlignment="Left" Margin="15,126,0,0" VerticalAlignment="Top"/>
-            <Label Content="Departement :" HorizontalAlignment="Left" Margin="15,155,0,0" VerticalAlignment="Top"/>
-            <TextBox x:Name="textAdresse" HorizontalAlignment="Left" Height="23" Margin="245,73,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="580" RenderTransformOrigin="0.035,0.498"/>
-            <TextBox x:Name="textTelephone" HorizontalAlignment="Left" Height="23" Margin="245,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="580"/>
-            <ComboBox x:Name="departement" HorizontalAlignment="Left" Margin="245,158,0,0" VerticalAlignment="Top" Width="580">
-                <ComboBoxItem Content= "Informatique" ></ComboBoxItem>
-                <ComboBoxItem Content= "RH" ></ComboBoxItem>
-                <ComboBoxItem Content= "Comptabilité" ></ComboBoxItem>
-            </ComboBox>
-            <Label Content="Nationalité : " HorizontalAlignment="Left" Margin="16,184,0,0" VerticalAlignment="Top"/>
-            <TextBox x:Name="textNationalite" HorizontalAlignment="Left" Height="23" Margin="245,188,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="580" TextChanged="TextBox_TextChanged"/>
-            <Label Content="N° CIN :" HorizontalAlignment="Left" Margin="16,217,0,0" VerticalAlignment="Top" Width="53"/>
-            <Label Content="Date de naissance :" HorizontalAlignment="Left" Margin="15,247,0,0" VerticalAlignment="Top" Width="123"/>
-            <Label Content="Date d'entrée :" HorizontalAlignment="Left" Margin="15,277,0,0" VerticalAlignment="Top" Width="97"/>
-            <Label Content="Date de sortie :" HorizontalAlignment="Left" Margin="16,306,0,0" VerticalAlignment="Top" Height="26" Width="108"/>
-            <DatePicker x:Name="dateNaissance" HorizontalAlignment="Left" Margin="245,246,0,0" VerticalAlignment="Top" Width="294"/>
-            <DatePicker x:Name="dateEntree" HorizontalAlignment="Left" Margin="245,276,0,0" VerticalAlignment="Top" Width="294"/>
-            <DatePicker x:Name="dateSortie" HorizontalAlignment="Left" Margin="245,306,0,0" VerticalAlignment="Top" Width="294"/>
+            <TextBox x:Name="textAdresse" HorizontalAlignment="Left" Height="23" Margin="245,73,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="363" RenderTransformOrigin="0.035,0.498"/>
+            <TextBox x:Name="textTelephone" HorizontalAlignment="Left" Height="23" Margin="245,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="363"/>
+            <Label Content="Nationalité : " HorizontalAlignment="Left" Margin="15,155,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="textNationalite" HorizontalAlignment="Left" Height="23" Margin="245,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="363" TextChanged="TextBox_TextChanged"/>
+            <Label Content="N° CIN :" HorizontalAlignment="Left" Margin="18,184,0,0" VerticalAlignment="Top" Width="53" RenderTransformOrigin="0.66,-0.542"/>
+            <Label Content="Date de naissance :" HorizontalAlignment="Left" Margin="15,213,0,0" VerticalAlignment="Top" Width="123"/>
+            <Label Content="Date d'entrée :" HorizontalAlignment="Left" Margin="15,242,0,0" VerticalAlignment="Top" Width="97"/>
+            <Label Content="Date de sortie :" HorizontalAlignment="Left" Margin="16,271,0,0" VerticalAlignment="Top" Height="26" Width="108"/>
+            <DatePicker x:Name="dateNaissance" HorizontalAlignment="Left" Margin="245,213,0,0" VerticalAlignment="Top" Width="266"/>
+            <DatePicker x:Name="dateEntree" HorizontalAlignment="Left" Margin="245,243,0,0" VerticalAlignment="Top" Width="266"/>
+            <DatePicker x:Name="dateSortie" HorizontalAlignment="Left" Margin="245,273,0,0" VerticalAlignment="Top" Width="266"/>
+            <Label Content="Nombre d'enfant :" HorizontalAlignment="Left" Margin="758,17,0,0" VerticalAlignment="Top" Width="106"/>
+            <Label Content="Photo :" HorizontalAlignment="Left" Margin="758,44,0,0" VerticalAlignment="Top" Width="106"/>
+            <Label Content="CV :" HorizontalAlignment="Left" Margin="758,73,0,0" VerticalAlignment="Top" Width="67"/>
+            <Label Content="Num compte banque :" HorizontalAlignment="Left" Margin="758,97,0,0" VerticalAlignment="Top" Width="135"/>
+            <Label Content="Id département :" HorizontalAlignment="Left" Margin="758,126,0,0" VerticalAlignment="Top" Width="106"/>
+            <TextBox x:Name="textNbEnfant" HorizontalAlignment="Left" Height="23" Margin="919,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="202"/>
+            <TextBox x:Name="textNumCompteBanque" HorizontalAlignment="Left" Height="23" Margin="919,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="202"/>
+            <TextBox x:Name="idDepartement" HorizontalAlignment="Left" Height="23" Margin="919,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="202"/>
+            <TextBox x:Name="textPhoto" HorizontalAlignment="Left" Height="23" Margin="919,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="202"/>
+            <TextBox x:Name="textCV" HorizontalAlignment="Left" Height="23" Margin="919,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="202"/>
+            <Label Content="id Poste :" HorizontalAlignment="Left" Margin="758,155,0,0" VerticalAlignment="Top" Width="106"/>
+            <TextBox x:Name="textIdPoste" HorizontalAlignment="Left" Height="23" Margin="919,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="202"/>
         </Grid>
         <DataGrid x:Name="tableau" HorizontalAlignment="Left" Height="172" Margin="10,432,-232,0" VerticalAlignment="Top" Width="1565" SelectionChanged="tableau_SelectionChanged">
             <DataGrid.Columns>
@@ -65,7 +71,7 @@
                 <DataGridTextColumn Header="Date de sortie" Binding="{Binding nbPassager}" Width="170"/>
             </DataGrid.Columns>
         </DataGrid>
-        <TextBox x:Name="textCIN" HorizontalAlignment="Left" Height="23" Margin="255,290,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="578"/>
+        <TextBox x:Name="textCIN" HorizontalAlignment="Left" Height="23" Margin="254,256,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="360"/>
 
     </Grid>
 </Window>

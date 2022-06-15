@@ -48,13 +48,31 @@ namespace Interface_bienvenue
             try
             {
                 conn.Open();
-                String requeteInsertion = "insert into employe values ('"+textNom.Text+"', '"+textPrenom.Text+"', '"+textAdresse.Text+"', '"+textMail.Text+"', '"+textTelephone.Text+"', '"+departement.SelectedItem+"', '"+textNationalite.Text+"', '"+textCIN.Text+"', '"+dateNaissance.SelectedDate+"', '"+dateEntree.SelectedDate+"', '"+dateSortie.SelectedDate+"')";
+                String requeteInsertion = "insert into employe values ('" + textCIN.Text + "', '" + textSexe.Text + "', '" + textStatutMatrimonial.Text + "', '" + textTelephone.Text + "', '" + textNbEnfant.Text + "', '" + textTelephone.Text + "', '" + textAdresse.Text + "', '" + textNationalite.Text + "', '" + dateEntree.SelectedDate + "', '" + dateSortie.SelectedDate + "', '" + textPhoto.Text + "', '" + dateNaissance.SelectedDate + "', '" + textCV.Text + "', '" + textNumCompteBanque.Text + "', '" + textIdPoste.Text + "', '" + textMobile.Text + "')";
                 MySqlCommand cmd = new MySqlCommand(requeteInsertion, conn);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Ajout effectué");
                 conn.Close();
             }
             catch(Exception ex)
+            {
+                MessageBox.Show("Oprération arrêtée" + ex);
+            }
+
+        }
+
+        private void butSupprimer_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                conn.Open();
+                String requeteInsertion = "delete from employe where ( '" + textCIN.Text + "', '" + textSexe.Text + "', '" + textStatutMatrimonial.Text + "', '" + textTelephone.Text + "', '" + textNbEnfant.Text + "', '" + textTelephone.Text + "', '" + textAdresse.Text + "', '" + textNationalite.Text + "', '" + dateEntree.SelectedDate + "', '" + dateSortie.SelectedDate + "', '" + textPhoto.Text + "', '" + dateNaissance.SelectedDate+ "', '" + textCV.Text + "', '" + textNumCompteBanque.Text + "', '" + textIdPoste.Text + "', '" + textMobile.Text + "')";
+                MySqlCommand cmd = new MySqlCommand(requeteInsertion, conn);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Ajout effectué");
+                conn.Close();
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show("Oprération arrêtée" + ex);
             }
