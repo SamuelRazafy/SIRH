@@ -33,5 +33,10 @@ namespace Interface_bienvenue
         {
 
         }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

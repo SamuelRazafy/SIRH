@@ -14,8 +14,8 @@
         <Button Content="Annuler" HorizontalAlignment="Left" Margin="848,290,0,0" VerticalAlignment="Top" Width="215" Background="#FF003F9A"/>
         <Label Content="GESTION DE PERSONNEL" HorizontalAlignment="Left" Margin="404,30,0,0" VerticalAlignment="Top" Width="266" FontWeight="Bold" FontSize="22"/>
         <Grid HorizontalAlignment="Left" Height="249" Margin="10,73,0,0" VerticalAlignment="Top" Width="644">
-            <TextBox HorizontalAlignment="Left" Height="23" Margin="245,131,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="389"/>
-            <TextBox HorizontalAlignment="Left" Height="23" Margin="245,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="390" RenderTransformOrigin="0.303,-1.171">
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="245,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="389"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="243,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="390" RenderTransformOrigin="0.303,-1.171">
                 <TextBox.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -25,20 +25,22 @@
                     </TransformGroup>
                 </TextBox.RenderTransform>
             </TextBox>
-            <TextBox HorizontalAlignment="Left" Height="23" Margin="245,17,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="389"/>
-            <Label Content="Adresse :" HorizontalAlignment="Left" Margin="15,96,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.88,0.708"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="245,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="389"/>
+            <Label Content="Adresse :" HorizontalAlignment="Left" Margin="15,73,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.88,0.708"/>
             <Label Content="Nom :" HorizontalAlignment="Left" Margin="15,10,0,0" VerticalAlignment="Top"/>
-            <Label Content="Prénom :" HorizontalAlignment="Left" Margin="15,57,0,0" VerticalAlignment="Top"/>
-            <Label Content="E-mail :" HorizontalAlignment="Left" Margin="15,131,0,0" VerticalAlignment="Top"/>
-            <Label Content="Fonction :" HorizontalAlignment="Left" Margin="15,172,0,0" VerticalAlignment="Top"/>
-            <Label Content="Département :" HorizontalAlignment="Left" Margin="13,215,0,0" VerticalAlignment="Top"/>
-            <TextBox HorizontalAlignment="Left" Height="23" Margin="245,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="389" RenderTransformOrigin="0.035,0.498"/>
-            <TextBox HorizontalAlignment="Left" Height="23" Margin="245,172,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="389"/>
-            <ComboBox HorizontalAlignment="Left" Margin="245,219,0,0" VerticalAlignment="Top" Width="389">
+            <Label Content="Prénom :" HorizontalAlignment="Left" Margin="16,44,0,0" VerticalAlignment="Top"/>
+            <Label Content="E-mail :" HorizontalAlignment="Left" Margin="15,97,0,0" VerticalAlignment="Top"/>
+            <Label Content="Fonction :" HorizontalAlignment="Left" Margin="15,126,0,0" VerticalAlignment="Top"/>
+            <Label Content="Département :" HorizontalAlignment="Left" Margin="15,155,0,0" VerticalAlignment="Top"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="245,73,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="389" RenderTransformOrigin="0.035,0.498"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="245,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="389"/>
+            <ComboBox HorizontalAlignment="Left" Margin="245,158,0,0" VerticalAlignment="Top" Width="389">
                 <ComboBoxItem Content= "Informatique" ></ComboBoxItem>
                 <ComboBoxItem Content= "RH" ></ComboBoxItem>
                 <ComboBoxItem Content= "Comptabilité" ></ComboBoxItem>
             </ComboBox>
+            <Label Content="Nationalité : " HorizontalAlignment="Left" Margin="16,184,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="textNationalite" HorizontalAlignment="Left" Height="23" Margin="245,188,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="389" TextChanged="TextBox_TextChanged"/>
         </Grid>
         <DataGrid x:Name="tableau" HorizontalAlignment="Left" Height="206" Margin="10,398,0,0" VerticalAlignment="Top" Width="1072" SelectionChanged="tableau_SelectionChanged">
             <DataGrid.Columns>
