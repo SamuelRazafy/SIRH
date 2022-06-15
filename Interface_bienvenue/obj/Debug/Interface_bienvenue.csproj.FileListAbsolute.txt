@@ -1,0 +1,93 @@
+C:\Users\inclu\source\repos\Interface_bienvenue\Interface_bienvenue\bin\Debug\Interface_bienvenue.exe.config
+C:\Users\inclu\source\repos\Interface_bienvenue\Interface_bienvenue\bin\Debug\Interface_bienvenue.exe
+C:\Users\inclu\source\repos\Interface_bienvenue\Interface_bienvenue\bin\Debug\Interface_bienvenue.pdb
+C:\Users\inclu\source\repos\Interface_bienvenue\Interface_bienvenue\bin\Debug\MySql.Data.dll
+C:\Users\inclu\source\repos\Interface_bienvenue\Interface_bienvenue\bin\Debug\MySql.Data.Entity.dll
+C:\Users\inclu\source\repos\Interface_bienvenue\Interface_bienvenue\bin\Debug\MySql.Web.dll
+C:\Users\inclu\source\repos\Interface_bienvenue\Interface_bienvenue\obj\Debug\Interface_bienvenue.csproj.AssemblyReference.cache
+C:\Users\inclu\source\repos\Interface_bienvenue\Interface_bienvenue\obj\Debug\Interface_bienvenue.csproj.SuggestedBindingRedirects.cache
+C:\Users\inclu\source\repos\Interface_bienvenue\Interface_bienvenue\obj\Debug\MainWindow.g.cs
+C:\Users\inclu\source\repos\Interface_bienvenue\Interface_bienvenue\obj\Debug\App.g.cs
+C:\Users\inclu\source\repos\Interface_bienvenue\Interface_bienvenue\obj\Debug\Interface_bienvenue_MarkupCompile.cache
+C:\Users\inclu\source\repos\Interface_bienvenue\Interface_bienvenue\obj\Debug\Interface_bienvenue_MarkupCompile.lref
+C:\Users\inclu\source\repos\Interface_bienvenue\Interface_bienvenue\obj\Debug\MainWindow.baml
+C:\Users\inclu\source\repos\Interface_bienvenue\Interface_bienvenue\obj\Debug\Interface_bienvenue.g.resources
+C:\Users\inclu\source\repos\Interface_bienvenue\Interface_bienvenue\obj\Debug\Interface_bienvenue.Properties.Resources.resources
+C:\Users\inclu\source\repos\Interface_bienvenue\Interface_bienvenue\obj\Debug\Interface_bienvenue.csproj.GenerateResource.cache
+C:\Users\inclu\source\repos\Interface_bienvenue\Interface_bienvenue\obj\Debug\Interface_bienvenue.csproj.CoreCompileInputs.cache
+C:\Users\inclu\source\repos\Interface_bienvenue\Interface_bienvenue\obj\Debug\Interface_bienvenue.csproj.CopyComplete
+C:\Users\inclu\source\repos\Interface_bienvenue\Interface_bienvenue\obj\Debug\Interface_bienvenue.exe
+C:\Users\inclu\source\repos\Interface_bienvenue\Interface_bienvenue\obj\Debug\Interface_bienvenue.pdb
+C:\Users\inclu\source\repos\Interface_bienvenue\Interface_bienvenue\bin\Debug\MaterialDesignColors.dll
+C:\Users\inclu\source\repos\Interface_bienvenue\Interface_bienvenue\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\inclu\source\repos\Interface_bienvenue\Interface_bienvenue\bin\Debug\MaterialDesignColors.pdb
+C:\Users\inclu\source\repos\Interface_bienvenue\Interface_bienvenue\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\inclu\source\repos\Interface_bienvenue\Interface_bienvenue\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\inclu\Desktop\PROJET SIRH\Interface_bienvenue\bin\Debug\Interface_bienvenue.exe.config
+C:\Users\inclu\Desktop\PROJET SIRH\Interface_bienvenue\bin\Debug\Interface_bienvenue.exe
+C:\Users\inclu\Desktop\PROJET SIRH\Interface_bienvenue\bin\Debug\Interface_bienvenue.pdb
+C:\Users\inclu\Desktop\PROJET SIRH\Interface_bienvenue\bin\Debug\MaterialDesignColors.dll
+C:\Users\inclu\Desktop\PROJET SIRH\Interface_bienvenue\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\inclu\Desktop\PROJET SIRH\Interface_bienvenue\bin\Debug\MaterialDesignColors.pdb
+C:\Users\inclu\Desktop\PROJET SIRH\Interface_bienvenue\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\inclu\Desktop\PROJET SIRH\Interface_bienvenue\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\inclu\Desktop\PROJET SIRH\Interface_bienvenue\obj\Debug\Interface_bienvenue.csproj.AssemblyReference.cache
+C:\Users\inclu\Desktop\PROJET SIRH\Interface_bienvenue\obj\Debug\Interface_bienvenue.csproj.SuggestedBindingRedirects.cache
+C:\Users\inclu\Desktop\PROJET SIRH\Interface_bienvenue\obj\Debug\MainWindow.g.cs
+C:\Users\inclu\Desktop\PROJET SIRH\Interface_bienvenue\obj\Debug\App.g.cs
+C:\Users\inclu\Desktop\PROJET SIRH\Interface_bienvenue\obj\Debug\Interface_bienvenue_MarkupCompile.cache
+C:\Users\inclu\Desktop\PROJET SIRH\Interface_bienvenue\obj\Debug\Interface_bienvenue_MarkupCompile.lref
+C:\Users\inclu\Desktop\PROJET SIRH\Interface_bienvenue\obj\Debug\MainWindow.baml
+C:\Users\inclu\Desktop\PROJET SIRH\Interface_bienvenue\obj\Debug\Interface_bienvenue.g.resources
+C:\Users\inclu\Desktop\PROJET SIRH\Interface_bienvenue\obj\Debug\Interface_bienvenue.Properties.Resources.resources
+C:\Users\inclu\Desktop\PROJET SIRH\Interface_bienvenue\obj\Debug\Interface_bienvenue.csproj.GenerateResource.cache
+C:\Users\inclu\Desktop\PROJET SIRH\Interface_bienvenue\obj\Debug\Interface_bienvenue.csproj.CoreCompileInputs.cache
+C:\Users\inclu\Desktop\PROJET SIRH\Interface_bienvenue\obj\Debug\Interface_bienvenue.csproj.CopyComplete
+C:\Users\inclu\Desktop\PROJET SIRH\Interface_bienvenue\obj\Debug\Interface_bienvenue.exe
+C:\Users\inclu\Desktop\PROJET SIRH\Interface_bienvenue\obj\Debug\Interface_bienvenue.pdb
+C:\Users\inclu\Desktop\PROJET SIRH\Interface_bienvenue\obj\Debug\Test.g.cs
+C:\Users\inclu\Desktop\PROJET SIRH\Interface_bienvenue\obj\Debug\Test.baml
+C:\Users\inclu\Desktop\PROJET SIRH\Interface_bienvenue\obj\Debug\essaiConn.g.cs
+C:\Users\inclu\Desktop\PROJET SIRH\Interface_bienvenue\obj\Debug\essaiConn.baml
+C:\Users\Inclusiv Academy 1\Desktop\ProjetMilay\SIRH-VRAI\Interface_bienvenue\bin\Debug\Interface_bienvenue.exe.config
+C:\Users\Inclusiv Academy 1\Desktop\ProjetMilay\SIRH-VRAI\Interface_bienvenue\bin\Debug\Interface_bienvenue.exe
+C:\Users\Inclusiv Academy 1\Desktop\ProjetMilay\SIRH-VRAI\Interface_bienvenue\bin\Debug\Interface_bienvenue.pdb
+C:\Users\Inclusiv Academy 1\Desktop\ProjetMilay\SIRH-VRAI\Interface_bienvenue\bin\Debug\MaterialDesignColors.dll
+C:\Users\Inclusiv Academy 1\Desktop\ProjetMilay\SIRH-VRAI\Interface_bienvenue\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Inclusiv Academy 1\Desktop\ProjetMilay\SIRH-VRAI\Interface_bienvenue\bin\Debug\MySql.Data.dll
+C:\Users\Inclusiv Academy 1\Desktop\ProjetMilay\SIRH-VRAI\Interface_bienvenue\bin\Debug\Google.Protobuf.dll
+C:\Users\Inclusiv Academy 1\Desktop\ProjetMilay\SIRH-VRAI\Interface_bienvenue\bin\Debug\Zstandard.Net.dll
+C:\Users\Inclusiv Academy 1\Desktop\ProjetMilay\SIRH-VRAI\Interface_bienvenue\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Inclusiv Academy 1\Desktop\ProjetMilay\SIRH-VRAI\Interface_bienvenue\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Inclusiv Academy 1\Desktop\ProjetMilay\SIRH-VRAI\Interface_bienvenue\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Inclusiv Academy 1\Desktop\ProjetMilay\SIRH-VRAI\Interface_bienvenue\bin\Debug\System.Memory.dll
+C:\Users\Inclusiv Academy 1\Desktop\ProjetMilay\SIRH-VRAI\Interface_bienvenue\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Inclusiv Academy 1\Desktop\ProjetMilay\SIRH-VRAI\Interface_bienvenue\bin\Debug\System.Buffers.dll
+C:\Users\Inclusiv Academy 1\Desktop\ProjetMilay\SIRH-VRAI\Interface_bienvenue\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Inclusiv Academy 1\Desktop\ProjetMilay\SIRH-VRAI\Interface_bienvenue\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Inclusiv Academy 1\Desktop\ProjetMilay\SIRH-VRAI\Interface_bienvenue\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Inclusiv Academy 1\Desktop\ProjetMilay\SIRH-VRAI\Interface_bienvenue\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Inclusiv Academy 1\Desktop\ProjetMilay\SIRH-VRAI\Interface_bienvenue\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Inclusiv Academy 1\Desktop\ProjetMilay\SIRH-VRAI\Interface_bienvenue\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Inclusiv Academy 1\Desktop\ProjetMilay\SIRH-VRAI\Interface_bienvenue\bin\Debug\MySql.Data.xml
+C:\Users\Inclusiv Academy 1\Desktop\ProjetMilay\SIRH-VRAI\Interface_bienvenue\obj\Debug\Interface_bienvenue.csproj.AssemblyReference.cache
+C:\Users\Inclusiv Academy 1\Desktop\ProjetMilay\SIRH-VRAI\Interface_bienvenue\obj\Debug\Interface_bienvenue.exe.config
+C:\Users\Inclusiv Academy 1\Desktop\ProjetMilay\SIRH-VRAI\Interface_bienvenue\obj\Debug\essaiConn.g.cs
+C:\Users\Inclusiv Academy 1\Desktop\ProjetMilay\SIRH-VRAI\Interface_bienvenue\obj\Debug\MainWindow.g.cs
+C:\Users\Inclusiv Academy 1\Desktop\ProjetMilay\SIRH-VRAI\Interface_bienvenue\obj\Debug\Test.g.cs
+C:\Users\Inclusiv Academy 1\Desktop\ProjetMilay\SIRH-VRAI\Interface_bienvenue\obj\Debug\App.g.cs
+C:\Users\Inclusiv Academy 1\Desktop\ProjetMilay\SIRH-VRAI\Interface_bienvenue\obj\Debug\Interface_bienvenue_MarkupCompile.cache
+C:\Users\Inclusiv Academy 1\Desktop\ProjetMilay\SIRH-VRAI\Interface_bienvenue\obj\Debug\Interface_bienvenue_MarkupCompile.lref
+C:\Users\Inclusiv Academy 1\Desktop\ProjetMilay\SIRH-VRAI\Interface_bienvenue\obj\Debug\App.baml
+C:\Users\Inclusiv Academy 1\Desktop\ProjetMilay\SIRH-VRAI\Interface_bienvenue\obj\Debug\essaiConn.baml
+C:\Users\Inclusiv Academy 1\Desktop\ProjetMilay\SIRH-VRAI\Interface_bienvenue\obj\Debug\MainWindow.baml
+C:\Users\Inclusiv Academy 1\Desktop\ProjetMilay\SIRH-VRAI\Interface_bienvenue\obj\Debug\Test.baml
+C:\Users\Inclusiv Academy 1\Desktop\ProjetMilay\SIRH-VRAI\Interface_bienvenue\obj\Debug\Interface_bienvenue.g.resources
+C:\Users\Inclusiv Academy 1\Desktop\ProjetMilay\SIRH-VRAI\Interface_bienvenue\obj\Debug\Interface_bienvenue.Properties.Resources.resources
+C:\Users\Inclusiv Academy 1\Desktop\ProjetMilay\SIRH-VRAI\Interface_bienvenue\obj\Debug\Interface_bienvenue.csproj.GenerateResource.cache
+C:\Users\Inclusiv Academy 1\Desktop\ProjetMilay\SIRH-VRAI\Interface_bienvenue\obj\Debug\Interface_bienvenue.csproj.CoreCompileInputs.cache
+C:\Users\Inclusiv Academy 1\Desktop\ProjetMilay\SIRH-VRAI\Interface_bienvenue\obj\Debug\Interface_bienvenue.csproj.CopyComplete
+C:\Users\Inclusiv Academy 1\Desktop\ProjetMilay\SIRH-VRAI\Interface_bienvenue\obj\Debug\Interface_bienvenue.exe
+C:\Users\Inclusiv Academy 1\Desktop\ProjetMilay\SIRH-VRAI\Interface_bienvenue\obj\Debug\Interface_bienvenue.pdb
+C:\Users\Inclusiv Academy 1\Desktop\ProjetMilay\SIRH-VRAI\Interface_bienvenue\obj\Debug\GestionPersonnelle.g.cs
+C:\Users\Inclusiv Academy 1\Desktop\ProjetMilay\SIRH-VRAI\Interface_bienvenue\obj\Debug\GestionPersonnelle.baml
