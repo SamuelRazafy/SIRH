@@ -34,9 +34,23 @@
             <Label Content="Département :" HorizontalAlignment="Left" Margin="13,215,0,0" VerticalAlignment="Top"/>
             <TextBox HorizontalAlignment="Left" Height="23" Margin="245,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="389" RenderTransformOrigin="0.035,0.498"/>
             <TextBox HorizontalAlignment="Left" Height="23" Margin="245,172,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="389"/>
-            <ComboBox HorizontalAlignment="Left" Margin="245,219,0,0" VerticalAlignment="Top" Width="389"/>
+            <ComboBox HorizontalAlignment="Left" Margin="245,219,0,0" VerticalAlignment="Top" Width="389">
+                <ComboBoxItem Content= "Informatique" ></ComboBoxItem>
+                <ComboBoxItem Content= "RH" ></ComboBoxItem>
+                <ComboBoxItem Content= "Comptabilité" ></ComboBoxItem>
+            </ComboBox>
         </Grid>
-        <StackPanel HorizontalAlignment="Left" Height="234" Margin="10,370,0,0" VerticalAlignment="Top" Width="1072"/>
+        <DataGrid x:Name="tableau" HorizontalAlignment="Left" Height="206" Margin="10,398,0,0" VerticalAlignment="Top" Width="1072" SelectionChanged="tableau_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="id" Binding="{Binding Id}" Width="60"/>
+                <DataGridTextColumn Header="Nom" Binding="{Binding dateDepart}" Width="100"/>
+                <DataGridTextColumn Header="Prénom" Binding="{Binding heureDepart}" Width="130"/>
+                <DataGridTextColumn Header="Adresse" Binding="{Binding depart}" Width="160"/>
+                <DataGridTextColumn Header="E-mail" Binding="{Binding arrivee}" Width="190"/>
+                <DataGridTextColumn Header="Fonction" Binding="{Binding nbPassager}" Width="220"/>
+                <DataGridTextColumn Header="Departement" Binding="{Binding nbPassager}" Width="250"/>
+            </DataGrid.Columns>
+        </DataGrid>
 
     </Grid>
 </Window>

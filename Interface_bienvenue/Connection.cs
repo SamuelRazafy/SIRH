@@ -10,7 +10,7 @@ namespace Interface_bienvenue
 {
     class Connection
     {
-        MySqlConnection conn = new MySqlConnection("SERVER = 127.0.0.1 ; PORT = 3308; DATABASE = 'sirh_projet2'; UID = root; PASSWORD =");
+        MySqlConnection conn = new MySqlConnection("SERVER = 127.0.0.1; PORT=3308; DATABASE = 'sirh_projet2'; UID = root; PASSWORD =");
         private void Initialize()
         {
             
@@ -27,7 +27,7 @@ namespace Interface_bienvenue
                 switch (e.Number)
                 {
                     case 0:
-                        MessageBox.Show("impossible de connecter au server");
+                        MessageBox.Show("impossible de se connecter au server");
                         break;
                     case 1:
                         MessageBox.Show("email/mots de passe n'est pas correct");

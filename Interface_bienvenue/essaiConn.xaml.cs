@@ -24,7 +24,7 @@ namespace Interface_bienvenue
         private string email, password, sql;
         private Connection conn = new Connection();
         private MySqlCommand command;
-        PasswordBox textM = new PasswordBox();
+        
 
         private void butGoogle_Click(object sender, RoutedEventArgs e)
         {

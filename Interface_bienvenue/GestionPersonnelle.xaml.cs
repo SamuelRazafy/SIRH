@@ -28,5 +28,10 @@ namespace Interface_bienvenue
         {
 
         }
+
+        private void tableau_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
