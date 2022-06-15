@@ -13,7 +13,7 @@
         <Button Content="Rechercher" HorizontalAlignment="Left" Margin="848,234,0,0" VerticalAlignment="Top" Width="215" Background="#FF003F9A" Click="Button_Click"/>
         <Button Content="Annuler" HorizontalAlignment="Left" Margin="848,290,0,0" VerticalAlignment="Top" Width="215" Background="#FF003F9A"/>
         <Label Content="GESTION DE PERSONNEL" HorizontalAlignment="Left" Margin="404,30,0,0" VerticalAlignment="Top" Width="266" FontWeight="Bold" FontSize="22"/>
-        <Grid HorizontalAlignment="Left" Height="249" Margin="10,73,0,0" VerticalAlignment="Top" Width="644">
+        <Grid HorizontalAlignment="Left" Height="359" Margin="10,73,0,0" VerticalAlignment="Top" Width="644">
             <TextBox HorizontalAlignment="Left" Height="23" Margin="245,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="389"/>
             <TextBox HorizontalAlignment="Left" Height="23" Margin="243,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="390" RenderTransformOrigin="0.303,-1.171">
                 <TextBox.RenderTransform>
@@ -30,8 +30,8 @@
             <Label Content="Nom :" HorizontalAlignment="Left" Margin="15,10,0,0" VerticalAlignment="Top"/>
             <Label Content="Prénom :" HorizontalAlignment="Left" Margin="16,44,0,0" VerticalAlignment="Top"/>
             <Label Content="E-mail :" HorizontalAlignment="Left" Margin="15,97,0,0" VerticalAlignment="Top"/>
-            <Label Content="Fonction :" HorizontalAlignment="Left" Margin="15,126,0,0" VerticalAlignment="Top"/>
-            <Label Content="Département :" HorizontalAlignment="Left" Margin="15,155,0,0" VerticalAlignment="Top"/>
+            <Label Content="Téléphone :" HorizontalAlignment="Left" Margin="15,126,0,0" VerticalAlignment="Top"/>
+            <Label Content="Mobile :" HorizontalAlignment="Left" Margin="15,155,0,0" VerticalAlignment="Top"/>
             <TextBox HorizontalAlignment="Left" Height="23" Margin="245,73,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="389" RenderTransformOrigin="0.035,0.498"/>
             <TextBox HorizontalAlignment="Left" Height="23" Margin="245,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="389"/>
             <ComboBox HorizontalAlignment="Left" Margin="245,158,0,0" VerticalAlignment="Top" Width="389">
@@ -40,9 +40,16 @@
                 <ComboBoxItem Content= "Comptabilité" ></ComboBoxItem>
             </ComboBox>
             <Label Content="Nationalité : " HorizontalAlignment="Left" Margin="16,184,0,0" VerticalAlignment="Top"/>
-            <TextBox x:Name="textNationalite" HorizontalAlignment="Left" Height="23" Margin="245,188,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="389" TextChanged="TextBox_TextChanged"/>
+            <TextBox x:Name="textNationalite" HorizontalAlignment="Left" Height="23" Margin="245,188,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="389" TextChanged="TextBox_TextChanged"/>
+            <Label Content="N° CIN :" HorizontalAlignment="Left" Margin="16,217,0,0" VerticalAlignment="Top" Width="53"/>
+            <Label Content="Date de naissance :" HorizontalAlignment="Left" Margin="15,247,0,0" VerticalAlignment="Top" Width="123"/>
+            <Label Content="Date d'entrée :" HorizontalAlignment="Left" Margin="16,281,0,0" VerticalAlignment="Top" Width="97"/>
+            <Label Content="Date de sortie :" HorizontalAlignment="Left" Margin="16,306,0,0" VerticalAlignment="Top" Height="26" Width="76"/>
+            <DatePicker HorizontalAlignment="Left" Margin="245,246,0,0" VerticalAlignment="Top" Width="217"/>
+            <DatePicker HorizontalAlignment="Left" Margin="245,276,0,0" VerticalAlignment="Top" Width="217"/>
+            <DatePicker HorizontalAlignment="Left" Margin="245,306,0,0" VerticalAlignment="Top" Width="217"/>
         </Grid>
-        <DataGrid x:Name="tableau" HorizontalAlignment="Left" Height="206" Margin="10,398,0,0" VerticalAlignment="Top" Width="1072" SelectionChanged="tableau_SelectionChanged">
+        <DataGrid x:Name="tableau" HorizontalAlignment="Left" Height="167" Margin="10,437,0,0" VerticalAlignment="Top" Width="1072" SelectionChanged="tableau_SelectionChanged">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="id" Binding="{Binding Id}" Width="60"/>
                 <DataGridTextColumn Header="Nom" Binding="{Binding dateDepart}" Width="100"/>
@@ -53,6 +60,7 @@
                 <DataGridTextColumn Header="Departement" Binding="{Binding nbPassager}" Width="250"/>
             </DataGrid.Columns>
         </DataGrid>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="255,290,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="388"/>
 
     </Grid>
 </Window>
