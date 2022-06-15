@@ -11,14 +11,18 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using MySql.Data.MySqlClient;
+using System.Diagnostics;
 
 namespace Interface_bienvenue
 {
-    /// <summary>
-    /// Logique d'interaction pour GestionPersonnelle.xaml
-    /// </summary>
+   
     public partial class GestionPersonnelle : Window
     {
+        
+        private MySqlConnection conn = new MySqlConnection("SERVER = localhost; PORT = 3308; DATABASE = 'vaovao'; UID = root; PASSWORD =");
+        
+
         public GestionPersonnelle()
         {
             InitializeComponent();
@@ -36,6 +40,24 @@ namespace Interface_bienvenue
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
+
+        }
+
+        private void butAjouter_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                conn.Open();
+                String requeteInsertion = "insert into employe values ('"+textNom.Text+"', '"+textPrenom.Text+"', '"+textAdresse.Text+"', '"+textMail.Text+"', '"+textTelephone.Text+"', '"+departement.SelectedItem+"', '"+textNationalite.Text+"', '"+textCIN.Text+"', '"+dateNaissance.SelectedDate+"', '"+dateEntree.SelectedDate+"', '"+dateSortie.SelectedDate+"')";
+                MySqlCommand cmd = new MySqlCommand(requeteInsertion, conn);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Ajout effectué");
+                conn.Close();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Oprération arrêtée" + ex);
+            }
 
         }
     }

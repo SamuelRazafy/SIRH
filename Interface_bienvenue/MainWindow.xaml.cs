@@ -35,7 +35,7 @@ namespace Interface_bienvenue
 
         private void btnInscrire_Click(object sender, RoutedEventArgs e)
         {
-            Test Cu = new Test();
+            GestionPersonnelle Cu = new GestionPersonnelle();
             Cu.Show();
             this.Hide();
 
