@@ -5,12 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-        Title="GestionPersonnelle" Height="645" Width="1591">
+        Title=" " Height="645" Width="1591" WindowStyle="ToolWindow">
     <Grid>
-        <Button x:Name="butAjouter" Content="Ajouter" HorizontalAlignment="Left" Margin="1250,79,0,0" VerticalAlignment="Top" Width="271" Background="#FF003F9A" materialDesign:ButtonAssist.CornerRadius="22" Click="butAjouter_Click"/>
+        <Button x:Name="butAjouter" Content="Ajouter" HorizontalAlignment="Left" Margin="1250,79,0,0" VerticalAlignment="Top" Width="271" Background="#FF003F9A" materialDesign:ButtonAssist.CornerRadius="22" Click="butAjouter_Click" d:IsLocked="True"/>
         <Button x:Name="butSupprimer" Content="Supprimer" HorizontalAlignment="Left" Margin="1250,126,0,0" VerticalAlignment="Top" Width="271" Background="#FF003F9A" materialDesign:ButtonAssist.CornerRadius="22" Click="butSupprimer_Click"/>
         <Button x:Name="butModifier" Content="Modifier" HorizontalAlignment="Left" Margin="1250,173,0,0" VerticalAlignment="Top" Width="271" Background="#FF003F9A" materialDesign:ButtonAssist.CornerRadius="22"/>
-        <Button x:Name="butRechercher" Content="Rechercher" HorizontalAlignment="Left" Margin="1250,219,0,0" VerticalAlignment="Top" Width="271" Background="#FF003F9A" Click="Button_Click" materialDesign:ButtonAssist.CornerRadius="22"/>
         <Button x:Name="butAnnuler" Content="Annuler" HorizontalAlignment="Left" Margin="1250,269,0,0" VerticalAlignment="Top" Width="271" Background="#FF003F9A" materialDesign:ButtonAssist.CornerRadius="22" Click="butAnnuler_Click"/>
         <Label Content="GESTION DE PERSONNEL" HorizontalAlignment="Left" Margin="704,10,0,0" VerticalAlignment="Top" Width="266" FontWeight="Bold" FontSize="22"/>
         <Grid HorizontalAlignment="Left" Height="359" Margin="10,73,0,0" VerticalAlignment="Top" Width="1131">
@@ -77,6 +76,7 @@
                 <ImageBrush ImageSource="Nouveau projet.jpg"/>
             </StackPanel.Background>
         </StackPanel>
+        <Button x:Name="butRechercher" Content="Rechercher" HorizontalAlignment="Left" Margin="1250,222,0,0" VerticalAlignment="Top" Width="271" Background="#FF003F9A" materialDesign:ButtonAssist.CornerRadius="22" Click="butRechercher_Click"/>
 
     </Grid>
 </Window>

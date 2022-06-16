@@ -73,6 +73,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Connection.cs" />
+    <Compile Include="Employe.cs" />
     <Compile Include="essaiConn.xaml.cs">
       <DependentUpon>essaiConn.xaml</DependentUpon>
     </Compile>

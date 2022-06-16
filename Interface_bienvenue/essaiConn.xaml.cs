@@ -94,7 +94,7 @@ namespace Interface_bienvenue
             }
             else
             {
-                sql = "SELECT * FROM utilisateur WHERE email = '" + email + "' AND mdp = '" + password + "'";
+                sql = "SELECT * FROM utillisateur WHERE email = '" + email + "' AND mdp = '" + password + "'";
                 if (conn.OpenConnection() == true)
                 {
                     try

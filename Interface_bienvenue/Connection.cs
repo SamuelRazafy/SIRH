@@ -10,8 +10,9 @@ namespace Interface_bienvenue
 {
     class Connection
     {
-        
-        MySqlConnection conn = new MySqlConnection("SERVER = localhost; PORT = 3308; DATABASE = 'vaovao'; UID = root; PASSWORD =");
+      
+
+        MySqlConnection conn = new MySqlConnection("SERVER = 127.0.0.1; PORT = 3308; DATABASE = 'vaovao'; UID = 'root'; PASSWORD =");
         private void Initialize()
         {
             
