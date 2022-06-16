@@ -50,7 +50,7 @@ namespace Interface_bienvenue
 
         private void butInsc_Click(object sender, RoutedEventArgs e)
         {
-            Test mande = new Test();
+            GestionTaches mande = new GestionTaches();
             mande.Show();
             this.Hide();
         }

@@ -1,0 +1,71 @@
+﻿<Window x:Class="Interface_bienvenue.GestionTaches"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="GestionTaches" Height="676.22" Width="1140.909">
+    <Grid>
+        <Label Content="GESTION DES TACHES" HorizontalAlignment="Left" Margin="440,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24"/>
+        <StackPanel Height="499" Margin="61,110,0,5" Width="172" HorizontalAlignment="Left">
+            <Button Content="Accueil" d:LayoutOverrides="Height" Background="#FF577E73" materialDesign:ButtonAssist.CornerRadius="22"/>
+            <Button Content="Rechercher tâche" d:LayoutOverrides="Height" Margin="0,60,0,0" Background="#FF577E73" materialDesign:ButtonAssist.CornerRadius="22"/>
+            <Button Content="Supprimer tâche" d:LayoutOverrides="Height" Margin="0,60,0,0" Background="#FF577E73" materialDesign:ButtonAssist.CornerRadius="22"/>
+            <Button Content="Assigner tâche" d:LayoutOverrides="Height" Margin="0,60,0,0" Background="#FF577E73" materialDesign:ButtonAssist.CornerRadius="22"/>
+            <Button Content="Modifier tâche" d:LayoutOverrides="Height" Margin="0,60,0,0" Background="#FF577E73" materialDesign:ButtonAssist.CornerRadius="22"/>
+            <Button Content="Créer tâche" Margin="0,60,0,0" Background="#FF577E73" materialDesign:ButtonAssist.CornerRadius="22"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="75" Margin="10,10,0,0" VerticalAlignment="Top" Width="100">
+            <StackPanel.Background>
+                <ImageBrush ImageSource="Nouveau projet.jpg"/>
+            </StackPanel.Background>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="28" Margin="30,126,0,0" VerticalAlignment="Top" Width="26">
+            <StackPanel.Background>
+                <ImageBrush ImageSource="home_50px.png"/>
+            </StackPanel.Background>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="27" Margin="25,219,0,0" VerticalAlignment="Top" Width="31">
+            <StackPanel.Background>
+                <ImageBrush ImageSource="search_24px.png"/>
+            </StackPanel.Background>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="26" Margin="30,314,0,0" VerticalAlignment="Top" Width="26">
+            <StackPanel.Background>
+                <ImageBrush ImageSource="Delete_24px.png"/>
+            </StackPanel.Background>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="24" Margin="30,401,0,0" VerticalAlignment="Top" Width="26">
+            <StackPanel.Background>
+                <ImageBrush ImageSource="external_24px.png"/>
+            </StackPanel.Background>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="26" Margin="30,490,0,0" VerticalAlignment="Top" Width="26">
+            <StackPanel.Background>
+                <ImageBrush ImageSource="edit_property_26px.png"/>
+            </StackPanel.Background>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="26" Margin="30,584,0,0" VerticalAlignment="Top" Width="31">
+            <StackPanel.Background>
+                <ImageBrush ImageSource="create_26px.png"/>
+            </StackPanel.Background>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="509" Margin="259,126,0,0" VerticalAlignment="Top" Width="864">
+            <Label Content="Avancement du projet" FontSize="16"/>
+            <DataGrid x:Name="tableauTaches" Height="185" Margin="0,20,0,0">
+                <DataGrid.Columns>
+
+                    <DataGridTextColumn Header="Liste des tâches" Binding="{Binding dateDepart}" Width="200"/>
+                    <DataGridTextColumn Header="Progression" Binding="{Binding heureDepart}" Width="500"/>
+                    <DataGridTextColumn Header="Responsable" Binding="{Binding depart}" Width="700"/>
+                    
+                   
+                </DataGrid.Columns>
+            </DataGrid>
+            <Label Content="Représentation graphique (Pourcentage efféctué en fonction des tâches" Margin="0,10,0,0" FontSize="16"/>
+            <StackPanel Height="237"/>
+        </StackPanel>
+
+    </Grid>
+</Window>

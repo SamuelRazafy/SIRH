@@ -133,3 +133,5 @@ C:\Users\Inclusiv Academy 1\Desktop\ProjSIRH\SIRH-VRAI\Interface_bienvenue\obj\D
 C:\Users\Inclusiv Academy 1\Desktop\ProjSIRH\SIRH-VRAI\Interface_bienvenue\obj\Debug\Interface_bienvenue.csproj.CopyComplete
 C:\Users\Inclusiv Academy 1\Desktop\ProjSIRH\SIRH-VRAI\Interface_bienvenue\obj\Debug\Interface_bienvenue.exe
 C:\Users\Inclusiv Academy 1\Desktop\ProjSIRH\SIRH-VRAI\Interface_bienvenue\obj\Debug\Interface_bienvenue.pdb
+C:\Users\Inclusiv Academy 1\Desktop\ProjSIRH\SIRH-VRAI\Interface_bienvenue\obj\Debug\GestionTaches.g.cs
+C:\Users\Inclusiv Academy 1\Desktop\ProjSIRH\SIRH-VRAI\Interface_bienvenue\obj\Debug\GestionTaches.baml

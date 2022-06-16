@@ -80,6 +80,9 @@
     <Compile Include="GestionPersonnelle.xaml.cs">
       <DependentUpon>GestionPersonnelle.xaml</DependentUpon>
     </Compile>
+    <Compile Include="GestionTaches.xaml.cs">
+      <DependentUpon>GestionTaches.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Test.xaml.cs">
       <DependentUpon>Test.xaml</DependentUpon>
     </Compile>
@@ -88,6 +91,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="GestionPersonnelle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GestionTaches.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -182,6 +189,24 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Nouveau projet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="home_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="search_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Delete_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="external_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="edit_property_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="create_26px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\MaterialDesignThemes.4.5.0\build\MaterialDesignThemes.targets" Condition="Exists('..\packages\MaterialDesignThemes.4.5.0\build\MaterialDesignThemes.targets')" />
