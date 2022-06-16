@@ -112,10 +112,6 @@ namespace Interface_bienvenue
             kozy.Show();
             this.Hide();
         }
-
-
-
-
         private void butRechercher_Click(object sender, RoutedEventArgs e)
         {
             conn.Open();
@@ -155,7 +151,18 @@ namespace Interface_bienvenue
         private void butModifier_Click(object sender, RoutedEventArgs e)
         {
             conn.Open();
-             
+            try
+            {
+                string requeteModifier = "UPDATE `employe` SET `CINEmp`="+textCIN.Text+",`Sexemp`="+textSexe.Text+",`StatutMatrimonial`="+textStatutMatrimonial.Text+",`NombreEnfant`="+textNbEnfant.Text+",`Telephone`="+textTelephone.Text+",`Adresse`="+textAdresse.Text+",`Nationalite`="+textNationalite.Text+",`DateEntree`="+dateEntree.Text+",`DateSortie`="+dateSortie.Text+",`UrlPhoto`="+textPhoto.Text+",`DateNaissance`="+dateNaissance.Text+",`urlCV`="+textCV.Text+",`NumCompteBanque`="+textNumCompteBanque+",`idDepartement`="+idDepartement.Text+",`idPoste`="+textIdPoste.Text+",`Téléphone 2`="+textMobile.Text+" WHERE 1";
+                MySqlCommand cmd = new MySqlCommand(requeteModifier, conn);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Modification effectuée");
+            }catch(Exception ex)
+            {
+                MessageBox.Show("Modification invalide"+ex);
+            }
+            conn.Close();
+           
         }
     }
 }

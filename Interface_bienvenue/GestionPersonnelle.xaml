@@ -71,7 +71,7 @@
             </DataGrid.Columns>
         </DataGrid>
         <TextBox x:Name="textCIN" HorizontalAlignment="Left" Height="23" Margin="254,256,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="360"/>
-        <StackPanel HorizontalAlignment="Left" Height="37" Margin="10,10,0,0" VerticalAlignment="Top" Width="53">
+        <StackPanel HorizontalAlignment="Left" Height="63" Margin="10,10,0,0" VerticalAlignment="Top" Width="101">
             <StackPanel.Background>
                 <ImageBrush ImageSource="Nouveau projet.jpg"/>
             </StackPanel.Background>
