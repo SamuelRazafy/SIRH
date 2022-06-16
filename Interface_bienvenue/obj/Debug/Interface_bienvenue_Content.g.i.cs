@@ -8,9 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("google_50px.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("lock_26px.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("logo%20de%20go.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("mail_50px.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("nouveau%20projet.jpg")]
 
 

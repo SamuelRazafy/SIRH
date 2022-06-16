@@ -78,5 +78,12 @@ namespace Interface_bienvenue
             }
 
         }
+
+        private void butAnnuler_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow kozy = new MainWindow();
+            kozy.Show();
+            this.Hide();
+        }
     }
 }
