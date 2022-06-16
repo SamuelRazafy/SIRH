@@ -21,8 +21,8 @@ namespace Interface_bienvenue
 
     public partial class GestionPersonnelle : Window
     {
-
-        private MySqlConnection conn = new MySqlConnection("SERVER = localhost; PORT = 3308; DATABASE = 'vaovao'; UID = root; PASSWORD =");
+       
+        private MySqlConnection conn = new MySqlConnection("SERVER=127.0.0.1;PORT=3308;DATABASE=vaovao;UID=root;PASSWORD=");
 
 
         public GestionPersonnelle()
@@ -42,18 +42,23 @@ namespace Interface_bienvenue
 
         private void butAjouter_Click(object sender, RoutedEventArgs e)
         {
+           
                 conn.Open();
-                String requeteInsertion = "insert into employe values ('" + textCIN.Text + "', '" + textSexe.Text + "', '" + textStatutMatrimonial.Text + "', '" + textTelephone.Text + "', '" + textNbEnfant.Text + "', '" + textTelephone.Text + "', '" + textAdresse.Text + "', '" + textNationalite.Text + "', '" + dateEntree.SelectedDate + "', '" + dateSortie.SelectedDate + "', '" + textPhoto.Text + "', '" + dateNaissance.SelectedDate + "', '" + textCV.Text + "', '" + textNumCompteBanque.Text + "', '" + textIdPoste.Text + "', '" + textMobile.Text + "')";
+                String requeteInsertion = "INSERT INTO `employe`(`idEmploye`, `CINEmp`, `Sexemp`, `StatutMatrimonial`, `NombreEnfant`, `Telephone`, `Adresse`, `Nationalite`, `DateEntree`, `DateSortie`, `UrlPhoto`, `DateNaissance`, `urlCV`, `NumCompteBanque`, `idDepartement`, `idPoste`, `Téléphone 2`)values(null,'"
+                + textCIN.Text + "', '" + textSexe.Text + "', '" + textStatutMatrimonial.Text + "', '"
+                + textTelephone.Text + "', '" + textNbEnfant.Text + "', '" + textTelephone.Text + "', '"
+                + textAdresse.Text + "', '" + textNationalite.Text + "', '" + dateEntree.SelectedDate + "', '" 
+                + dateSortie.SelectedDate + "', '" + textPhoto.Text + "', '" + dateNaissance.SelectedDate + "', '" 
+                + textCV.Text + "', '" + textNumCompteBanque.Text + "', '" + textIdPoste.Text + "', '" + textMobile.Text + "')";
                 MySqlCommand cmd = new MySqlCommand(requeteInsertion, conn);
-                cmd.ExecuteNonQuery();
+                
                 MessageBox.Show("Ajout effectué");
-                using (DbDataReader reader = cmd.ExecuteReader())
-                    try
-                    {
-                        reader.Read();
-                        textStatutMatrimonial.Text = reader.GetString(0);
-
-                    }
+               
+                try
+                {
+                cmd.ExecuteNonQuery();
+                    
+                }
 
 
 
@@ -61,7 +66,22 @@ namespace Interface_bienvenue
                     {
                         MessageBox.Show("Oprération arrêtée" + ex);
                     }
-                conn.Close();
+            Employe emp = new Employe(
+
+                        textStatutMatrimonial.Text,
+                    textSexe.Text,
+                    textAdresse.Text,
+                    textMobile.Text,
+                    textTelephone.Text,
+                    textNationalite.Text,
+                    textCIN.Text,
+                    textNbEnfant.Text,
+                    dateNaissance.Text,
+                    dateEntree.Text,
+                    dateSortie.Text
+                    );
+            tableau.Items.Add(emp);
+            conn.Close();
 
         }
             
@@ -75,7 +95,7 @@ namespace Interface_bienvenue
                 String requeteSuppression = "delete from employe where CINEmp = " + textCIN.Text + " or Sexemp = " + textSexe.Text + " or StatutMatrimonial = " + textStatutMatrimonial.Text + " or Telephone = " + textTelephone.Text + " or NombreEnfant = " + textNbEnfant.Text + " or Telephone 2 = " + textMobile.Text + " or Adresse = " + textAdresse.Text + " or Nationalite = " + textNationalite.Text + " or DateEntree = " + dateEntree.SelectedDate + " or DateSortie = " + dateSortie.SelectedDate + " or DateNaissance = " + dateNaissance.SelectedDate + " or NumCompteBanque = " + textNumCompteBanque.Text + "";
                 MySqlCommand cmd = new MySqlCommand(requeteSuppression, conn);
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Ajout effectué");
+                MessageBox.Show("Suppression effectuée");
 
             }
             catch (Exception ex)
@@ -109,8 +129,20 @@ namespace Interface_bienvenue
                 try
                 {
                     reader.Read();
-                    textStatutMatrimonial.Text = reader.GetString(0);
-
+                    Employe emp = new Employe (
+                    textStatutMatrimonial.Text = reader.GetString(0),
+                    textSexe.Text = reader.GetString(1),
+                    textAdresse.Text = reader.GetString(2),
+                    textMobile.Text = reader.GetString(3),
+                    textTelephone.Text = reader.GetString(4),
+                    textNationalite.Text = reader.GetString(5),
+                    textCIN.Text = reader.GetString(6),
+                    textNbEnfant.Text = reader.GetString(7),
+                    dateNaissance.Text = reader.GetString(8),
+                    dateEntree.Text = reader.GetString(9),
+                    dateSortie.Text = reader.GetString(10)
+                    );
+                    tableau.Items.Add(emp);
 
                 }
                 catch (Exception ex)
@@ -118,6 +150,12 @@ namespace Interface_bienvenue
                     MessageBox.Show("Oprération arrêtée" + ex);
                 }
             conn.Close();
+        }
+
+        private void butModifier_Click(object sender, RoutedEventArgs e)
+        {
+            conn.Open();
+             
         }
     }
 }

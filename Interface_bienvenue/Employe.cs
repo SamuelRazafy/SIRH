@@ -15,15 +15,14 @@ namespace Interface_bienvenue
         public string telephone { get; set; }
         public string nationalite { get; set; }
         public string numCIN { get; set; }
+        public string nombreEnfant { get; set; }
         public string dateNaissance { get; set; }
         public string dateEntree { get; set; }
         public string dateSortie { get; set; }
-        public string nombreEnfant { get; set; }
-        public string numCompteBanque { get; set; }
-        public string idDepartement { get; set; }
-        public string idPoste { get; set; }
+        
+       
 
-        public Employe(string statutMatrimonial, string sexe, string adresse, string mobile, string telephone, string nationalite, string numCIN, string dateNaissance, string dateEntree, string dateSortie, string nombreEnfant, string numCompteBanque, string idDepartement, string idPoste)
+        public Employe(string statutMatrimonial, string sexe, string adresse, string mobile, string telephone, string nationalite, string numCIN,string nombreEnfant, string dateNaissance, string dateEntree, string dateSortie)
         {
             this.statutMatrimonial = statutMatrimonial;
             this.sexe = sexe;
@@ -32,13 +31,12 @@ namespace Interface_bienvenue
             this.telephone = telephone;
             this.nationalite = nationalite;
             this.numCIN = numCIN;
+            this.nombreEnfant = nombreEnfant;
             this.dateNaissance = dateNaissance;
             this.dateEntree = dateEntree;
             this.dateSortie = dateSortie;
-            this.nombreEnfant = nombreEnfant;
-            this.numCompteBanque = numCompteBanque;
-            this.idDepartement = idDepartement;
-            this.idPoste = idPoste;
+            
+           
 
 
         }
