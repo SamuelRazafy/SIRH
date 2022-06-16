@@ -12,7 +12,7 @@ namespace Interface_bienvenue
     {
       
 
-        MySqlConnection conn = new MySqlConnection("SERVER = 127.0.0.1; PORT = 3308; DATABASE = 'vaovao'; UID = 'root'; PASSWORD =");
+        MySqlConnection conn = new MySqlConnection("SERVER = 127.0.0.1; DATABASE = 'vaovao';PORT = 3308; UID = 'root'; PASSWORD =");
         private void Initialize()
         {
             

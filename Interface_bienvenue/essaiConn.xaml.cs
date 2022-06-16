@@ -45,10 +45,7 @@ namespace Interface_bienvenue
             this.Hide();
         }
 
-        private void mikatona_Click(object sender, RoutedEventArgs e)
-        {
-            Close();
-        }
+       
 
 
         private void butInsc_Click(object sender, RoutedEventArgs e)

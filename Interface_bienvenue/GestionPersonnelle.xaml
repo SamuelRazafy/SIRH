@@ -56,7 +56,7 @@
         </Grid>
         <DataGrid x:Name="tableau" HorizontalAlignment="Left" Height="172" Margin="10,432,-232,0" VerticalAlignment="Top" Width="1565" SelectionChanged="tableau_SelectionChanged">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="id" Binding="{Binding Id}" Width="60"/>
+                
                 <DataGridTextColumn Header="Statut matrimonial" Binding="{Binding dateDepart}" Width="90"/>
                 <DataGridTextColumn Header="Sexe" Binding="{Binding heureDepart}" Width="120"/>
                 <DataGridTextColumn Header="Adresse" Binding="{Binding depart}" Width="130"/>
