@@ -18,12 +18,12 @@ using System.Data.Common;
 
 namespace Interface_bienvenue
 {
-   
+
     public partial class GestionPersonnelle : Window
     {
-        
+
         private MySqlConnection conn = new MySqlConnection("SERVER = localhost; PORT = 3308; DATABASE = 'vaovao'; UID = root; PASSWORD =");
-        
+
 
         public GestionPersonnelle()
         {
@@ -42,37 +42,50 @@ namespace Interface_bienvenue
 
         private void butAjouter_Click(object sender, RoutedEventArgs e)
         {
+            conn.Open();
             try
             {
-                conn.Open();
+
                 String requeteInsertion = "insert into employe values ('" + textCIN.Text + "', '" + textSexe.Text + "', '" + textStatutMatrimonial.Text + "', '" + textTelephone.Text + "', '" + textNbEnfant.Text + "', '" + textTelephone.Text + "', '" + textAdresse.Text + "', '" + textNationalite.Text + "', '" + dateEntree.SelectedDate + "', '" + dateSortie.SelectedDate + "', '" + textPhoto.Text + "', '" + dateNaissance.SelectedDate + "', '" + textCV.Text + "', '" + textNumCompteBanque.Text + "', '" + textIdPoste.Text + "', '" + textMobile.Text + "')";
                 MySqlCommand cmd = new MySqlCommand(requeteInsertion, conn);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Ajout effectué");
-                conn.Close();
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show("Oprération arrêtée" + ex);
-            }
+                using (DbDataReader reader = cmd.ExecuteReader())
+                    try
+                    {
+                        reader.Read();
+                        textStatutMatrimonial.Text = reader.GetString(0);
 
-        }
+                    }
+
+
+
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Oprération arrêtée" + ex);
+                    }
+                conn.Close();
+
+            }
+            }
 
         private void butSupprimer_Click(object sender, RoutedEventArgs e)
         {
+            conn.Open();
             try
             {
-                conn.Open();
-                String requeteSuppression = "delete from employe where CINEmp = "+textCIN.Text+" or Sexemp = "+textSexe.Text+" or StatutMatrimonial = "+textStatutMatrimonial.Text+" or Telephone = "+textTelephone.Text+" or NombreEnfant = "+textNbEnfant.Text+" or Telephone 2 = " + textMobile.Text + " or Adresse = "+textAdresse.Text+" or Nationalite = "+textNationalite.Text+" or DateEntree = "+dateEntree.SelectedDate+" or DateSortie = "+dateSortie.SelectedDate+" or DateNaissance = "+dateNaissance.SelectedDate+" or NumCompteBanque = "+textNumCompteBanque.Text+"";
+
+                String requeteSuppression = "delete from employe where CINEmp = " + textCIN.Text + " or Sexemp = " + textSexe.Text + " or StatutMatrimonial = " + textStatutMatrimonial.Text + " or Telephone = " + textTelephone.Text + " or NombreEnfant = " + textNbEnfant.Text + " or Telephone 2 = " + textMobile.Text + " or Adresse = " + textAdresse.Text + " or Nationalite = " + textNationalite.Text + " or DateEntree = " + dateEntree.SelectedDate + " or DateSortie = " + dateSortie.SelectedDate + " or DateNaissance = " + dateNaissance.SelectedDate + " or NumCompteBanque = " + textNumCompteBanque.Text + "";
                 MySqlCommand cmd = new MySqlCommand(requeteSuppression, conn);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Ajout effectué");
-                conn.Close();
+
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Oprération arrêtée" + ex);
             }
+            conn.Close();
 
         }
 
@@ -83,29 +96,31 @@ namespace Interface_bienvenue
             this.Hide();
         }
 
+
+
+
         private void butRechercher_Click(object sender, RoutedEventArgs e)
         {
             conn.Open();
-            
-                
-                String requeteRechercher = "delete from employe where CINEmp = " + textCIN.Text + " or Sexemp = " + textSexe.Text + " or StatutMatrimonial = " + textStatutMatrimonial.Text + " or Telephone = " + textTelephone.Text + " or NombreEnfant = " + textNbEnfant.Text + " or Telephone 2 = " + textMobile.Text + " or Adresse = " + textAdresse.Text + " or Nationalite = " + textNationalite.Text + " or DateEntree = " + dateEntree.SelectedDate + " or DateSortie = " + dateSortie.SelectedDate + " or DateNaissance = " + dateNaissance.SelectedDate + " or NumCompteBanque = " + textNumCompteBanque.Text + "";
-                MySqlCommand cmd = new MySqlCommand(requeteRechercher, conn);
-                cmd.ExecuteNonQuery();
-                using (DbDataReader reader = cmd.ExecuteReader())
 
-            try
-            {
-                reader.Read();
+
+            String requeteRechercher = "select from employe where CINEmp = " + textCIN.Text + " or Sexemp = " + textSexe.Text + " or StatutMatrimonial = " + textStatutMatrimonial.Text + " or Telephone = " + textTelephone.Text + " or NombreEnfant = " + textNbEnfant.Text + " or Telephone 2 = " + textMobile.Text + " or Adresse = " + textAdresse.Text + " or Nationalite = " + textNationalite.Text + " or DateEntree = " + dateEntree.SelectedDate + " or DateSortie = " + dateSortie.SelectedDate + " or DateNaissance = " + dateNaissance.SelectedDate + " or NumCompteBanque = " + textNumCompteBanque.Text + "";
+            MySqlCommand cmd = new MySqlCommand(requeteRechercher, conn);
+            
+            using (DbDataReader reader = cmd.ExecuteReader())
+
+                try
+                {
+                    reader.Read();
                     textStatutMatrimonial.Text = reader.GetString(0);
 
-                
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Oprération arrêtée" + ex);
-            }
-            conn.Close();
 
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Oprération arrêtée" + ex);
+                }
+            conn.Close();
         }
     }
 }

@@ -57,14 +57,14 @@
         <DataGrid x:Name="tableau" HorizontalAlignment="Left" Height="172" Margin="10,432,-232,0" VerticalAlignment="Top" Width="1565" SelectionChanged="tableau_SelectionChanged">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="id" Binding="{Binding Id}" Width="60"/>
-                <DataGridTextColumn Header="Nom" Binding="{Binding dateDepart}" Width="90"/>
-                <DataGridTextColumn Header="Prénom" Binding="{Binding heureDepart}" Width="120"/>
+                <DataGridTextColumn Header="Statut matrimonial" Binding="{Binding dateDepart}" Width="90"/>
+                <DataGridTextColumn Header="Sexe" Binding="{Binding heureDepart}" Width="120"/>
                 <DataGridTextColumn Header="Adresse" Binding="{Binding depart}" Width="130"/>
-                <DataGridTextColumn Header="E-mail" Binding="{Binding arrivee}" Width="135"/>
+                <DataGridTextColumn Header="Mobile" Binding="{Binding arrivee}" Width="135"/>
                 <DataGridTextColumn Header="Téléphone" Binding="{Binding nbPassager}" Width="140"/>
-                <DataGridTextColumn Header="Departement" Binding="{Binding nbPassager}" Width="145"/>
-                <DataGridTextColumn Header="Nationalité" Binding="{Binding arrivee}" Width="150"/>
-                <DataGridTextColumn Header="N° CIN" Binding="{Binding nbPassager}" Width="155"/>
+                <DataGridTextColumn Header="Nationalité" Binding="{Binding nbPassager}" Width="145"/>
+                <DataGridTextColumn Header="Num CIN" Binding="{Binding arrivee}" Width="150"/>
+                <DataGridTextColumn Header="Nombre d'enfant" Binding="{Binding nbPassager}" Width="155"/>
                 <DataGridTextColumn Header="Date de naissance" Binding="{Binding nbPassager}" Width="160"/>
                 <DataGridTextColumn Header="Date d'entrée" Binding="{Binding nbPassager}" Width="165"/>
                 <DataGridTextColumn Header="Date de sortie" Binding="{Binding nbPassager}" Width="170"/>
