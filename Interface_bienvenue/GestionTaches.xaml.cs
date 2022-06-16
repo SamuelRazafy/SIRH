@@ -23,5 +23,12 @@ namespace Interface_bienvenue
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Test kozy = new Test();
+            kozy.Show();
+            this.Hide();
+        }
     }
 }

@@ -5,16 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-        Title="GestionTaches" Height="676.22" Width="1140.909">
+        Title=" " Height="676.22" Width="1140.909" WindowStyle="ToolWindow">
     <Grid>
         <Label Content="GESTION DES TACHES" HorizontalAlignment="Left" Margin="440,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24"/>
         <StackPanel Height="499" Margin="61,110,0,5" Width="172" HorizontalAlignment="Left">
-            <Button Content="Accueil" d:LayoutOverrides="Height" Background="#FF577E73" materialDesign:ButtonAssist.CornerRadius="22"/>
-            <Button Content="Rechercher tâche" d:LayoutOverrides="Height" Margin="0,60,0,0" Background="#FF577E73" materialDesign:ButtonAssist.CornerRadius="22"/>
-            <Button Content="Supprimer tâche" d:LayoutOverrides="Height" Margin="0,60,0,0" Background="#FF577E73" materialDesign:ButtonAssist.CornerRadius="22"/>
-            <Button Content="Assigner tâche" d:LayoutOverrides="Height" Margin="0,60,0,0" Background="#FF577E73" materialDesign:ButtonAssist.CornerRadius="22"/>
-            <Button Content="Modifier tâche" d:LayoutOverrides="Height" Margin="0,60,0,0" Background="#FF577E73" materialDesign:ButtonAssist.CornerRadius="22"/>
-            <Button Content="Créer tâche" Margin="0,60,0,0" Background="#FF577E73" materialDesign:ButtonAssist.CornerRadius="22"/>
+            <Button Content="Accueil" d:LayoutOverrides="Height" Background="#FF577E73" materialDesign:ButtonAssist.CornerRadius="22" Click="Button_Click"/>
+            <Button x:Name="butRechercher" Content="Rechercher tâche" d:LayoutOverrides="Height" Margin="0,60,0,0" Background="#FF577E73" materialDesign:ButtonAssist.CornerRadius="22"/>
+            <Button x:Name="butSupprimer" Content="Supprimer tâche" d:LayoutOverrides="Height" Margin="0,60,0,0" Background="#FF577E73" materialDesign:ButtonAssist.CornerRadius="22"/>
+            <Button x:Name="butAssigner" Content="Assigner tâche" d:LayoutOverrides="Height" Margin="0,60,0,0" Background="#FF577E73" materialDesign:ButtonAssist.CornerRadius="22"/>
+            <Button x:Name="butModifier" Content="Modifier tâche" d:LayoutOverrides="Height" Margin="0,60,0,0" Background="#FF577E73" materialDesign:ButtonAssist.CornerRadius="22"/>
+            <Button x:Name="butCreer" Content="Créer tâche" Margin="0,60,0,0" Background="#FF577E73" materialDesign:ButtonAssist.CornerRadius="22"/>
         </StackPanel>
         <StackPanel HorizontalAlignment="Left" Height="75" Margin="10,10,0,0" VerticalAlignment="Top" Width="100">
             <StackPanel.Background>
@@ -64,7 +64,7 @@
                 </DataGrid.Columns>
             </DataGrid>
             <Label Content="Représentation graphique (Pourcentage efféctué en fonction des tâches" Margin="0,10,0,0" FontSize="16"/>
-            <StackPanel Height="237"/>
+            <StackPanel x:Name="graph" Height="237"/>
         </StackPanel>
 
     </Grid>
