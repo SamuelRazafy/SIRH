@@ -30,15 +30,5 @@ namespace Interface_bienvenue
             kozy.Show();
             this.Hide();
         }
-
-        private void Button_Click_1()
-        {
-
-        }
-
-        private void butCreer_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }
