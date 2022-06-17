@@ -57,17 +57,17 @@
         <DataGrid x:Name="tableau" HorizontalAlignment="Left" Height="172" Margin="10,432,-232,0" VerticalAlignment="Top" Width="1565" SelectionChanged="tableau_SelectionChanged">
             <DataGrid.Columns>
                 
-                <DataGridTextColumn Header="Statut matrimonial" Binding="{Binding dateDepart}" Width="90"/>
-                <DataGridTextColumn Header="Sexe" Binding="{Binding heureDepart}" Width="120"/>
-                <DataGridTextColumn Header="Adresse" Binding="{Binding depart}" Width="130"/>
-                <DataGridTextColumn Header="Mobile" Binding="{Binding arrivee}" Width="135"/>
-                <DataGridTextColumn Header="Téléphone" Binding="{Binding nbPassager}" Width="140"/>
-                <DataGridTextColumn Header="Nationalité" Binding="{Binding nbPassager}" Width="145"/>
-                <DataGridTextColumn Header="Num CIN" Binding="{Binding arrivee}" Width="150"/>
-                <DataGridTextColumn Header="Nombre d'enfant" Binding="{Binding nbPassager}" Width="155"/>
-                <DataGridTextColumn Header="Date de naissance" Binding="{Binding nbPassager}" Width="160"/>
-                <DataGridTextColumn Header="Date d'entrée" Binding="{Binding nbPassager}" Width="165"/>
-                <DataGridTextColumn Header="Date de sortie" Binding="{Binding nbPassager}" Width="170"/>
+                <DataGridTextColumn Header="Statut matrimonial" Binding="{Binding StatutMatrimonial}" Width="90"/>
+                <DataGridTextColumn Header="Sexe" Binding="{Binding Sexemp}" Width="120"/>
+                <DataGridTextColumn Header="Adresse" Binding="{Binding Adresse}" Width="130"/>
+                <DataGridTextColumn Header="Mobile" Binding="{Binding Téléphone2}" Width="135"/>
+                <DataGridTextColumn Header="Téléphone" Binding="{Binding Telephone}" Width="140"/>
+                <DataGridTextColumn Header="Nationalité" Binding="{Binding Nationalite}" Width="145"/>
+                <DataGridTextColumn Header="Num CIN" Binding="{Binding CINEmp}" Width="150"/>
+                <DataGridTextColumn Header="Nombre d'enfant" Binding="{Binding NombreEnfant}" Width="155"/>
+                <DataGridTextColumn Header="Date de naissance" Binding="{Binding DateNaissance}" Width="160"/>
+                <DataGridTextColumn Header="Date d'entrée" Binding="{Binding DateEntree}" Width="165"/>
+                <DataGridTextColumn Header="Date de sortie" Binding="{Binding DateSortie}" Width="170"/>
             </DataGrid.Columns>
         </DataGrid>
         <TextBox x:Name="textCIN" HorizontalAlignment="Left" Height="23" Margin="254,256,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="360"/>

@@ -176,13 +176,9 @@
     <Resource Include="Dossiers login\google_50px.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Facebook_50px.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Dossiers login\Logo de GO.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="google_50px.png" />
     <Resource Include="lock_26px.png" />
     <Resource Include="Logo de GO.png" />
     <Resource Include="mail_50px.png" />
@@ -207,6 +203,13 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="create_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="back_to_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="facebook.png" />
+    <Resource Include="google-logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\MaterialDesignThemes.4.5.0\build\MaterialDesignThemes.targets" Condition="Exists('..\packages\MaterialDesignThemes.4.5.0\build\MaterialDesignThemes.targets')" />

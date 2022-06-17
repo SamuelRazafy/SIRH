@@ -24,18 +24,64 @@ namespace Interface_bienvenue
             InitializeComponent();
             fenetrePrincipale.Visibility = Visibility.Visible;
             fenetreRechercher.Visibility = Visibility.Hidden;
+            fenetreAssigner.Visibility = Visibility.Hidden;
+            fenetreCreer.Visibility = Visibility.Hidden;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             fenetrePrincipale.Visibility = Visibility.Visible;
             fenetreRechercher.Visibility = Visibility.Hidden;
+            fenetreAssigner.Visibility = Visibility.Hidden;
+            fenetreCreer.Visibility = Visibility.Hidden;
         }
 
         private void butRechercher_Click(object sender, RoutedEventArgs e)
         {
             fenetrePrincipale.Visibility = Visibility.Hidden;
             fenetreRechercher.Visibility = Visibility.Visible;
+            fenetreAssigner.Visibility = Visibility.Hidden;
+            fenetreCreer.Visibility = Visibility.Hidden;
+        }
+
+        private void butAssigner_Click(object sender, RoutedEventArgs e)
+        {
+            fenetrePrincipale.Visibility = Visibility.Hidden;
+            fenetreRechercher.Visibility = Visibility.Visible;
+            fenetreAssigner.Visibility = Visibility.Hidden;
+            fenetreCreer.Visibility = Visibility.Hidden;
+        }
+
+        private void butModifier_Click(object sender, RoutedEventArgs e)
+        {
+            fenetrePrincipale.Visibility = Visibility.Hidden;
+            fenetreRechercher.Visibility = Visibility.Hidden;
+            fenetreAssigner.Visibility = Visibility.Visible;
+            fenetreCreer.Visibility = Visibility.Hidden;
+
+        }
+
+        private void butSupprimer_Click(object sender, RoutedEventArgs e)
+        {
+            fenetrePrincipale.Visibility = Visibility.Hidden;
+            fenetreRechercher.Visibility = Visibility.Visible;
+            fenetreAssigner.Visibility = Visibility.Hidden;
+            fenetreCreer.Visibility = Visibility.Hidden;
+        }
+
+        private void butCreer_Click(object sender, RoutedEventArgs e)
+        {
+            fenetrePrincipale.Visibility = Visibility.Hidden;
+            fenetreRechercher.Visibility = Visibility.Hidden;
+            fenetreAssigner.Visibility = Visibility.Hidden;
+            fenetreCreer.Visibility = Visibility.Visible;
+        }
+
+        private void butRetour_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow kozy = new MainWindow();
+            kozy.Show();
+            this.Hide();
         }
     }
 }
