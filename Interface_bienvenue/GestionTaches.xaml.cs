@@ -22,13 +22,20 @@ namespace Interface_bienvenue
         public GestionTaches()
         {
             InitializeComponent();
+            fenetrePrincipale.Visibility = Visibility.Visible;
+            fenetreRechercher.Visibility = Visibility.Hidden;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Test kozy = new Test();
-            kozy.Show();
-            this.Hide();
+            fenetrePrincipale.Visibility = Visibility.Visible;
+            fenetreRechercher.Visibility = Visibility.Hidden;
+        }
+
+        private void butRechercher_Click(object sender, RoutedEventArgs e)
+        {
+            fenetrePrincipale.Visibility = Visibility.Hidden;
+            fenetreRechercher.Visibility = Visibility.Visible;
         }
     }
 }
