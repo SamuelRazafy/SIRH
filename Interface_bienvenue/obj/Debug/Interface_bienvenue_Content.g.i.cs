@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("facebook.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("google-logo.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("facebook-new.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("google-logo%20(1).png")]
 
 
